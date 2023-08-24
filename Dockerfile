@@ -1,4 +1,4 @@
-FROM openjdk:17
+FROM openjdk:17-oracle
 EXPOSE 8080
 ADD target/spring-docker.jar spring-docker.jar
 ENTRYPOINT ["java","-jar","/spring-docker.jar"]
