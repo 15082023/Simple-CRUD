@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simplecrud-app-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: simplecrud-app
+  ports:
+    - port: 4000
+      targetPort: 4000
+      protocol: TCP
